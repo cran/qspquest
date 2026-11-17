@@ -1,0 +1,20 @@
+[package]
+name = "qspquest-modeling"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = ["crates-io"]
+description = "Model compiler, simulation and fitting engine for QSPQuest"
+repository = "https://github.com/unibio-intelligence/qspquest"
+readme = "README.md"
+rust-version = "1.89"
+include = ["Cargo.toml", "build.rs", "src/**", "README.md", "LICENSE"]
+
+[dependencies]
+serde_json.workspace = true
+libm = "=0.2.16"
+qspquest-core.workspace = true
+diffsol.workspace = true
+
+[build-dependencies]
+sha2 = "=0.10.9"
